@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 - Advanced Javascript</title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id='imgViewer' class="imgViewer hidden">
+        
+    </div>
+
+    <header>
+        <div class="container">
+            <button onclick="ToggleDarkMode()">
+                <span id="btn_darkmode" class="material-symbols-outlined">dark_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cheetoes - Cheetahs & Volcanos!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio mollitia autem ipsa deleniti doloribus iure quaerat porro voluptatum minus exercitationem numquam aspernatur harum dolor eaque, facilis perspiciatis inventore, nostrum laboriosam.</p>
+
+        <!-- Use https://derivv.com/ to make automatic crops of your high-res images -->
+        <div id="gallery" class="gallery">
+            <img src="images/volcano-1-500x.webp" alt="" data-full_image="volcano-1.webp">
+            <img src="images/volcano-2-500x.webp" alt="" data-full_image="volcano-2.webp">
+            <img src="images/volcano-3-500x.jpeg" alt="" data-full_image="volcano-3.jpeg">
+            <img src="images/cheetah-500x.avif" alt="" data-full_image="cheetah.avif">
+        </div>
+
+        <div id="carousel" class="carousel">
+            <img src="images/volcano-1.webp" alt="Twin volcanos erupt">
+            <img src="images/volcano-2.webp" alt="Big volcano eruption">
+            <img src="images/volcano-3.jpeg" alt="Smoking arctic volcano">
+        </div>
+    </main>
+
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+</html>
